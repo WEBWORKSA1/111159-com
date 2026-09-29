@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>11.11 Tools: Countdown, Coupon Stacker, Landed-Cost & Currency Calculator | 111159</title>
+<meta name="description" content="Free tools for Singles' Day shoppers and importers: an embeddable 11.11 countdown, a 满减 threshold-coupon stacker, an import duty and landed-cost calculator, a live currency converter and a Chinese number decoder.">
+<link rel="canonical" href="https://111159.com/tools.html">
+<meta property="og:title" content="Free 11.11 shopping & import calculators"><meta property="og:description" content="Countdown, coupon stacker, landed cost, currency, number decoder."><meta property="og:image" content="https://111159.com/assets/img/og.svg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#E0162B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Serif+SC:wght@600;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/config.js"></script><script defer src="assets/js/site.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"111159 Landed Cost & Coupon Calculators","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership <b>Contact →</b></a></div>
+<header id="site-header"><noscript><a href="index.html">111159</a></noscript></header>
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Tools</div>
+    <span class="eyebrow">Free tools</span>
+    <h1>Shop smarter. Import smarter.</h1>
+    <p class="lead">Five free calculators for 11.11 shoppers, importers and sellers. No sign-up needed.</p>
+    <div class="chips"><a class="chip" href="#countdown">⏱ Countdown</a><a class="chip" href="#stack">🧮 Coupon stacker</a><a class="chip" href="#landed">📦 Landed cost</a><a class="chip" href="#fx">💱 Currency</a><a class="chip" href="#decoder">🀄 Number decoder</a></div>
+  </div>
+</section>
+
+<section class="section" id="countdown" style="padding-top:10px">
+  <div class="container two-col">
+    <div class="countdown-card" data-countdown>
+      <h2 style="font-size:1.4rem">⏱ 11.11 Countdown</h2>
+      <div data-cd="state" style="font-weight:800">Next 11.11 starts in</div>
+      <div class="countdown"><div class="cd-box"><div class="cd-num" data-cd="d">--</div><div class="cd-lbl">Days</div></div><div class="cd-box"><div class="cd-num" data-cd="h">--</div><div class="cd-lbl">Hours</div></div><div class="cd-box"><div class="cd-num" data-cd="m">--</div><div class="cd-lbl">Mins</div></div><div class="cd-box"><div class="cd-num" data-cd="s">--</div><div class="cd-lbl">Secs</div></div></div>
+      <p class="muted" data-cd="local" style="font-size:.85rem"></p>
+    </div>
+    <div>
+      <h3>Embed this countdown on your site</h3>
+      <p class="muted">Free for blogs and stores. Just keep the credit link.</p>
+      <code class="kbd" id="embedCode">&lt;iframe src="https://111159.com/embed.html" width="100%" height="190" style="border:0;border-radius:16px" title="11.11 Countdown by 111159"&gt;&lt;/iframe&gt;&lt;p style="font-size:12px"&gt;Countdown by &lt;a href="https://111159.com"&gt;111159.com&lt;/a&gt;&lt;/p&gt;</code>
+      <button class="btn btn-ghost btn-sm" data-copy="#embedCode" style="margin-top:10px">Copy embed code</button>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot"><div class="ad-inner"></div></div>
+
+<section class="section alt" id="stack">
+  <div class="container two-col">
+    <div class="card" id="stackCalc">
+      <h2 style="font-size:1.4rem">🧮 满减 Coupon Stacker</h2>
+      <div class="form-grid">
+        <div class="full"><label for="sc-price">Cart total (before discounts)</label><input id="sc-price" type="number" value="420" min="0"></div>
+        <div><label for="sc-disc">Store discount %</label><input id="sc-disc" type="number" value="10" min="0" max="100"></div>
+        <div><label for="sc-coupon">Extra coupon (flat)</label><input id="sc-coupon" type="number" value="10" min="0"></div>
+        <div><label for="sc-th">Threshold: every spend of…</label><input id="sc-th" type="number" value="300" min="0"></div>
+        <div><label for="sc-off">…save this much</label><input id="sc-off" type="number" value="50" min="0"></div>
+        <div class="full"><label for="sc-cb">Cashback % (card / portal)</label><input id="sc-cb" type="number" value="3" min="0" max="100"></div>
+      </div>
+      <div class="result-box" id="sc-out"></div>
+    </div>
+    <div class="prose">
+      <h2>How threshold coupons work</h2>
+      <p><span class="zh">满减</span> (mǎn jiǎn) means "full-reduce": for every ¥300 you spend, you save ¥50. Platforms usually apply store discounts <em>first</em>, then threshold coupons, then flat coupons. Rules vary, so always check the checkout preview.</p>
+      <ul><li>Add a small filler item to cross the next threshold only if you'd buy it anyway.</li><li>Split large carts into separate orders when thresholds don't stack.</li><li>Add card or portal cashback on top.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="landed">
+  <div class="container two-col">
+    <div class="card" id="landedCalc">
+      <h2 style="font-size:1.4rem">📦 Landed-Cost &amp; Margin Calculator</h2>
+      <div class="form-grid">
+        <div><label for="lc-unit">Unit price (supplier)</label><input id="lc-unit" type="number" value="3.20" step="0.01" min="0"></div>
+        <div><label for="lc-qty">Quantity</label><input id="lc-qty" type="number" value="1000" min="1"></div>
+        <div><label for="lc-ship">Freight &amp; insurance (total)</label><input id="lc-ship" type="number" value="650" min="0"></div>
+        <div><label for="lc-duty">Import duty %</label><input id="lc-duty" type="number" value="6.5" step="0.1" min="0"></div>
+        <div><label for="lc-tax">VAT / GST / sales tax %</label><input id="lc-tax" type="number" value="5" step="0.1" min="0"></div>
+        <div><label for="lc-fees">Other fees (broker, QC, port)</label><input id="lc-fees" type="number" value="300" min="0"></div>
+        <div><label for="lc-retail">Your selling price / unit</label><input id="lc-retail" type="number" value="14.99" step="0.01" min="0"></div>
+        <div><label for="lc-cur">Currency</label><select id="lc-cur"><option>USD</option><option>CAD</option><option>EUR</option><option>GBP</option><option>AUD</option><option>INR</option></select></div>
+      </div>
+      <div class="result-box" id="lc-out"></div>
+      <p class="form-note">Simplified estimate: duty on goods + freight, tax on (value + duty). Confirm HS codes and rates with a customs broker.</p>
+    </div>
+    <div>
+      <div class="band" style="grid-template-columns:1fr">
+        <div><h2 style="font-size:1.5rem">Want real numbers, not estimates?</h2><p>Get supplier quotes including DDP shipping, so the landed cost is known before you pay.</p><a class="btn btn-gold" href="sourcing.html">Get free quotes →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot"><div class="ad-inner"></div></div>
+
+<section class="section alt" id="fx">
+  <div class="container two-col">
+    <div class="card" id="fxCalc">
+      <h2 style="font-size:1.4rem">💱 Currency Converter</h2>
+      <div class="form-grid">
+        <div class="full"><label for="fx-amt">Amount</label><input id="fx-amt" type="number" value="1111" min="0"></div>
+        <div><label for="fx-from">From</label><select id="fx-from"><option>CNY</option><option>USD</option><option>EUR</option><option>GBP</option><option>CAD</option><option>AUD</option><option>INR</option><option>JPY</option><option>SGD</option><option>MYR</option></select></div>
+        <div><label for="fx-to">To</label><select id="fx-to"><option>USD</option><option>CNY</option><option>EUR</option><option>GBP</option><option>CAD</option><option>AUD</option><option>INR</option><option>JPY</option><option>SGD</option><option>MYR</option></select></div>
+      </div>
+      <div class="result-box" id="fx-out"></div>
+    </div>
+    <div class="prose"><h2>Paying in yuan?</h2><p>Many cards add a 2–3% foreign-transaction fee. A no-FX-fee card, or paying in the platform's local-currency checkout, can wipe out that cost. Compare the platform's converted price with the mid-market rate shown here.</p></div>
+  </div>
+</section>
+
+<section class="section" id="decoder">
+  <div class="container" style="max-width:820px">
+    <div class="card" data-decoder>
+      <h2 style="font-size:1.4rem">🀄 Chinese Number Decoder</h2>
+      <label for="dec2">Enter a number</label><input id="dec2" value="168" inputmode="numeric" maxlength="20">
+      <div class="decoder-sum"></div><div class="decoder-out"></div>
+      <p style="margin-top:12px"><a href="meaning.html">Full guide to Chinese number meanings →</a></p>
+    </div>
+  </div>
+</section>
+</main>
+<footer id="site-footer"></footer>
+</body>
+</html>
