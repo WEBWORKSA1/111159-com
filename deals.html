@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>11.11 Deals Directory: Singles' Day Sales by Platform & Region | 111159</title>
+<meta name="description" content="Every major 11.11 Singles' Day sale in one directory: AliExpress, Lazada, Shopee, Temu, Tmall, JD and more. Filter by platform, category and region, vote on the hottest deals and set alerts.">
+<link rel="canonical" href="https://111159.com/deals.html">
+<meta property="og:title" content="11.11 Deals Directory"><meta property="og:description" content="Singles' Day sales by platform, filtered and community-voted."><meta property="og:image" content="https://111159.com/assets/img/og.svg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#E0162B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Serif+SC:wght@600;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/config.js"></script><script defer src="assets/js/site.js"></script>
+</head>
+<body data-exit>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership <b>Contact →</b></a></div>
+<header id="site-header"><noscript><a href="index.html">111159</a></noscript></header>
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Deals</div>
+    <span class="eyebrow">Deal directory · community-voted</span>
+    <h1>11.11 deals by platform</h1>
+    <p class="lead" style="max-width:760px">Every major Singles' Day sale in one place. Filter, vote 🔥 on the hottest, and <a href="#submit">post a deal</a> you've found.</p>
+    <p class="muted" style="font-size:.82rem">Affiliate disclosure: some links may earn us a commission at no extra cost to you. Prices and terms are set by each retailer; always check the retailer's site. <a href="disclosure.html">Learn more</a>.</p>
+  </div>
+</section>
+<section class="section" style="padding-top:8px">
+  <div class="container">
+    <div class="toolbar">
+      <input id="dealSearch" type="search" placeholder="Search deals, platforms, categories…" aria-label="Search deals">
+      <select id="dealSort" aria-label="Sort"><option value="hot">Sort: Hottest</option><option value="new">Sort: Newest</option><option value="az">Sort: A–Z</option></select>
+      <label class="check" style="flex:0 0 auto"><input type="checkbox" id="hideExpired" checked> Hide expired</label>
+      <span id="dealCount" class="muted" style="margin-left:auto;font-weight:700"></span>
+    </div>
+    <div style="margin-bottom:10px"><b style="font-size:.85rem">Platform</b><div class="chips" id="platformChips" style="margin-top:6px"></div></div>
+    <div style="margin-bottom:22px"><b style="font-size:.85rem">Category</b><div class="chips" id="catChips" style="margin-top:6px"></div></div>
+    <div class="grid g3" id="dealGrid" aria-live="polite"><p class="muted">Loading deals…</p></div>
+  </div>
+</section>
+<div class="ad-slot"><div class="ad-inner"></div></div>
+<section class="section alt">
+  <div class="container two-col">
+    <form class="form-card" id="submit" data-form="Deal submission" data-success="Thanks! Our editors verify every deal before it goes live." novalidate>
+      <h2 style="font-size:1.5rem">🔥 Submit a deal</h2>
+      <p class="muted">Share a great 11.11 price. Top contributors each month win rewards.</p>
+      <div class="form-grid">
+        <div class="full"><label>Deal URL <span class="req">*</span></label><input name="deal_url" type="url" required placeholder="https://"></div>
+        <div><label>Coupon code</label><input name="code" placeholder="Optional"></div>
+        <div><label>Expires</label><input name="expires" type="date"></div>
+        <div class="full"><label>Why is it great? <span class="req">*</span></label><textarea name="description" required placeholder="Price vs. usual price, stacking tips, shipping…"></textarea></div>
+        <div class="full"><label>Your email (for credit &amp; rewards)</label><input name="email" type="email"></div>
+      </div>
+      <button class="btn btn-primary btn-block" style="margin-top:14px">Submit deal</button>
+    </form>
+    <div>
+      <form class="form-card" data-form="Keyword deal alert" data-success="Alert created! We'll email you when a matching deal appears." novalidate>
+        <h2 style="font-size:1.5rem">🔔 Create a deal alert</h2>
+        <p class="muted">Tell us what you're hunting for and we'll email you when it drops.</p>
+        <div class="form-grid">
+          <div class="full"><label>Keywords <span class="req">*</span></label><input name="keywords" required placeholder="e.g., robot vacuum, Anker, running shoes"></div>
+          <div><label>Max price (USD)</label><input name="max_price" type="number" min="0"></div>
+          <div><label>Region</label><select name="region"><option>Global</option><option>North America</option><option>Europe / UK</option><option>Southeast Asia</option><option>India</option><option>China</option></select></div>
+          <div class="full"><label>Email <span class="req">*</span></label><input name="email" type="email" required></div>
+        </div>
+        <button class="btn btn-gold btn-block" style="margin-top:14px">Create alert</button>
+      </form>
+      <div class="card" style="margin-top:20px"><h3>🧮 Before you check out</h3><p class="muted">Stack threshold coupons, store discounts and cashback correctly.</p><a class="btn btn-ghost btn-sm" href="tools.html#stack">Open the coupon stacker →</a></div>
+    </div>
+  </div>
+</section>
+<div class="ad-slot"><div class="ad-inner"></div></div>
+</main>
+<footer id="site-footer"></footer>
+<div class="sticky-cta"><a class="btn btn-primary" href="#submit">Post a deal</a><a class="btn btn-gold" href="sourcing.html">Bulk quotes</a></div>
+</body>
+</html>
